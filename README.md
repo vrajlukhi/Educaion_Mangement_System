@@ -6,6 +6,7 @@ Education Management System Backend API
 - Features
   
   1. User Authentication:
+     
     -JWT based authentication for login and signup.
     -Role based access control for different user types: Admin, Teacher, and Student.
   
@@ -15,6 +16,7 @@ Education Management System Backend API
     - Students can enroll in courses and submit assignments.
 
   3. Enrollment Management:
+  
     -Admins can enroll and remove students from courses.
     -Students can view their enrollment status.
 
