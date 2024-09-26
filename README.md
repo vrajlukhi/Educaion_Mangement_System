@@ -5,51 +5,51 @@ Education Management System Backend API
 
 - Features
   
-  1. User Authentication:
+  1.User Authentication:
     - JWT based authentication for login and signup.
     - Role based access control for different user types: Admin, Teacher, and Student.
   
-  2. Course Management:
+  2.Course Management:
     - Admins can create, update, and delete courses.
     - Teachers can update course content, upload assignments, and create quizzes.
     - Students can enroll in courses and submit assignments.
 
-  3. Enrollment Management:
+  3.Enrollment Management:
     - Admins can enroll and remove students from courses.
     - Students can view their enrollment status.
 
-  4. Grade Management :
+  4.Grade Management :
     - Teachers can assign grades to students.
     - Students can view their grades for each course.
 
-  5. Assignment Submissions:
+  5.Assignment Submissions:
     - Students can submit assignments and view their submission details.
     - Teachers can view student submissions and grade them.
 
-  6. Course Analytics:
+  6.Course Analytics:
     - Average grade per course.
     - Number of enrolled students per course.
  
-  7. Security:
+  7.Security:
     - Passwords are securely hashed using bcrypt.
     - All sensitive routes are protected using JWT and role-based authorization.
 
 - Database Models
 
-  1. User:
+  1.User:
     - Roles: Admin, Teacher, Student.
     - Stores user credentials and role information.
 
-  2. Course:
+  2.Course:
     - Stores information about each course (e.g., title, description, dates, assigned teacher, enrolled students).
 
-  3. Content:
+  3.Content:
     - Stores course content, including assignments and quizzes.
 
-  4. Submission:
+  4.Submission:
     - Stores information about student submissions, including assignment files, submission date, and grades.
 
-  5. Grade:
+  5.Grade:
     - Stores the grade a teacher assigns to a student for a specific course.
  
 - Error Handling
