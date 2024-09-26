@@ -4,6 +4,7 @@ Education Management System Backend API
   - This project is a backend API for an Education Management System built using Node.js, Express, and MongoDB. The API handles user authentication, course management, enrollment, assignment submissions, grading, and provides course analytics like the average grade per course and the number of students enrolled in each course.
 
 - Features
+  
   1.User Authentication:
     -JWT-based authentication for login and signup.
     -Role-based access control for different user types: Admin, Teacher, and Student.
