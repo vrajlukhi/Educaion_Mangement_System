@@ -1,0 +1,22 @@
+const express = require("express")
+const cookie = require("cookie-parser")
+const connect = require("./config/db")
+const uRoute = require("./routes/user.routes")
+const cRoute = require("./routes/coures.routes")
+const gRoute = require("./routes/grade.routes")
+const qRouete = require("./routes/quize.routes")
+const app = express()
+app.use(express.json())
+app.use(express.urlencoded({extended: true }))
+require("dotenv").config()
+app.use(cookie())
+
+
+app.use("/user" , uRoute)
+app.use("/course" , cRoute)
+app.use("/grade" , gRoute)
+app.use("/quiz" , qRouete)
+app.listen(process.env.PORT , ()=>{
+    connect()
+    console.log(`port is strat ${process.env.PORT}`)
+})
