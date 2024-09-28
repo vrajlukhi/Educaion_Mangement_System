@@ -76,6 +76,8 @@ const updateCourse = async (req, res) => {
         course: courseId,
         fileUrl,
       });
+      course.assignments.push(assignment._id)
+      await course.save()
       
       await assignment.save();
       res.status(201).json({ message: 'Assignment submitted successfully', assignment });
